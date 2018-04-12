@@ -23,25 +23,31 @@ You need to have at least PHP 7.1.3, Composer and Node.js installed on your mach
 $ git clone https://github.com/fostermadeco/laravel-graphql-blog.git
 ```
 
-**2-** Create a .env file in the root directory and copy the content from .env.example
+**2-** Go to the downloaded / cloned directory
+
+```bash
+$ cd laravel-graphql-blog
+```
+
+**3-** Create a .env file in the root directory and copy the content from .env.example
 
 ```bash
 $ cp .env.example .env
 ```
 
-**3-** Run Composer to install or update the new requirement.
+**4-** Run Composer to install or update the new requirement.
 
 ```bash
 $ composer install
 ```
 
-**4-** Generate a new application key for your app
+**5-** Generate a new application key for your app
 
 ```bash
 $ php artisan key:generate
 ```
 
-**5-** Edit the .env file and add / update your local database credentials in the .env file 
+**6-** Edit the .env file and add / update your local database credentials in the .env file 
 
 ```
 DB_CONNECTION=mysql
@@ -53,39 +59,39 @@ DB_PASSWORD=secret
 
 ```
 
-**6-** Create a symbolink link to your public storage
+**7-** Create a symbolink link to your public storage
 
 ```bash
 $ php artisan storage:link
 
 ```
 
-**7-** Run the database migration and seeders
+**8-** Run the database migration and seeders
 
 ```bash
 $ php artisan migrate --seed
 
 ```
 
-**8-** Run npm to install additional dependencies
+**9-** Run npm to install additional dependencies
 
 ```bash
 $ npm install
 ```
 
-**9-** Run npm to compile the Js and CSS resources
+**10-** Run npm to compile the Js and CSS resources
 
 ```bash
 $ npm run dev
 ```
 
-**10-** Launch the app
+**11-** Launch the app
 
 ```bash
 $ php artisan serve
 ```
 
-**11-** Go to http://localhost:8000/ and Voilà !!!
+**12-** Go to http://localhost:8000/ and Voilà !!!
 
 
 ## What are we demonstrating here?
