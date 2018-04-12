@@ -18,13 +18,13 @@
                <hr/>
                <div class="w3-margin">
                   <h3>Comments</h3>
-                 <template v-if="comments">
-                    <comment v-for="comment in comments" :key="comment.id" :comment="comment"></comment>
-                 </template>
-                 <template v-else>
-                    <p>There are no comments available.</p>
-                 </template>
-                 <hr/>
+                  <template v-if="comments">
+                     <comment v-for="comment in comments" :key="comment.id" :comment="comment"></comment>
+                  </template>
+                  <template v-else>
+                     <p>There are no comments available.</p>
+                  </template>
+                  <hr/>
                   <guest-comment-form :post_id="post_id" @save="addNewComment" ></guest-comment-form>
                </div>
             </div>
@@ -39,7 +39,7 @@
                <related-post-list-item v-for="post in post.related_posts" :key="post.id" :post="post"></related-post-list-item>
             </ul>
             <p v-else>
-              There are no related posts available
+               There are no related posts available
             </p>
          </div>
          <hr>

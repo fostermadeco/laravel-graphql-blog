@@ -1,8 +1,8 @@
 <template>
 	<div class="w3-content" style="max-width:1400px">
-	  	<app-header></app-header>
-	    <router-view></router-view>
-	    <app-footer></app-footer>
+		<app-header></app-header>
+		<router-view></router-view>
+		<app-footer></app-footer>
 	</div>
 </template>
 
@@ -16,3 +16,7 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+</style>

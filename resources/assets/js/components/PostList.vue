@@ -1,54 +1,48 @@
 <template>
-  <div class="w3-row">
+   <div class="w3-row">
       <div class="w3-col l8 s12">
-
-          <template v-if="loading">
+         <template v-if="loading">
             Loading ...
-          </template>
-          <template v-else>
-
+         </template>
+         <template v-else>
             <post-list-item v-for="post in postsPerPage.posts" :key="post.id" :post="post"></post-list-item>
-
             <paginate
-              :page-count="page_count"
-              :click-handler="getPostsPerPage"
-              :initial-page="page - 1"
-              :prev-text="'&lt;'"
-              :next-text="'&gt;'"
-              :container-class="'pagination w3-margin'"
-              :page-class="'page-item'"
-              :prev-class="'page-item'"
-              :prev-link-class ="'page-link'"
-              :next-class="'page-item'"
-              :next-link-class ="'page-link'"
-              :page-link-class ="'page-link'">
+               :page-count="page_count"
+               :click-handler="getPostsPerPage"
+               :initial-page="page - 1"
+               :prev-text="'&lt;'"
+               :next-text="'&gt;'"
+               :container-class="'pagination w3-margin'"
+               :page-class="'page-item'"
+               :prev-class="'page-item'"
+               :prev-link-class ="'page-link'"
+               :next-class="'page-item'"
+               :next-link-class ="'page-link'"
+               :page-link-class ="'page-link'">
             </paginate>
-
-          </template>
+         </template>
       </div>
-
       <div class="w3-col l4">
-        <div class="w3-card w3-margin">
-          <div class="w3-container w3-padding">
-            <h4>Popular Posts</h4>
-          </div>
-          <template v-if="$apollo.loading">
-            Loading...
-          </template>
-          <template v-else>
-            <ul v-if="popularPosts.length > 0" class="w3-ul w3-hoverable w3-white">
-              <popular-post-list-item v-for="post in popularPosts" :key="post.id" :post="post"></popular-post-list-item>
-            </ul>
-            <p v-else>
-              There are no popular posts available
-            </p>
-          </template>
-        </div>
-        <hr> 
-        <tag-list :tags="tags"></tag-list>
+         <div class="w3-card w3-margin">
+            <div class="w3-container w3-padding">
+               <h4>Popular Posts</h4>
+            </div>
+            <template v-if="$apollo.loading">
+               Loading...
+            </template>
+            <template v-else>
+               <ul v-if="popularPosts.length > 0" class="w3-ul w3-hoverable w3-white">
+                  <popular-post-list-item v-for="post in popularPosts" :key="post.id" :post="post"></popular-post-list-item>
+               </ul>
+               <p v-else>
+                  There are no popular posts available
+               </p>
+            </template>
+         </div>
+         <hr>
+         <tag-list :tags="tags"></tag-list>
       </div>
-
-  </div>
+   </div>
 </template>
 
 <script>
