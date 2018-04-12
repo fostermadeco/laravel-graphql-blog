@@ -91,7 +91,9 @@ $ npm run dev
 $ php artisan serve
 ```
 
-**12-** Go to http://localhost:8000/ and Voilà !!!
+**12-**
+Go to http://localhost:8000/ and Voilà !!!
+The GraphiQL Interface is also available at http://localhost:8000/graphql-ui
 
 
 ## What are we demonstrating here?
