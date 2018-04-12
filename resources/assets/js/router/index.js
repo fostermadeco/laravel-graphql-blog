@@ -19,12 +19,6 @@ const routes = [
     props: true
   },
   {
-    path: '/categories/:category_slug/:category_id/posts',
-    component: PostListPerCategory,
-    name: 'post.show',
-    props: true
-  },
-  {
     path: '/tags/:tag_slug/posts',
     component: PostListPerTag,
     name: 'post.show',

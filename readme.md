@@ -59,29 +59,40 @@ DB_PASSWORD=secret
 
 ```
 
+**5-** Run the database migration and seeders
 
-**5-** Create a symbolink link to your public storage
+```bash
+$ php artisan migrate --seed
+
+```
+
+**6-** Create a symbolink link to your public storage
 
 ```bash
 $ php artisan storage:link
 
 ```
 
+**7-** Run npm to install additional dependencies
 
-**3-** Run npm to compile the Js and CSS resources
+```bash
+$ npm install
+```
+
+
+**8-** Run npm to compile the Js and CSS resources
 
 ```bash
 $ npm run dev
 ```
 
-**4-** Launch the app
+**9-** Launch the app
 
 ```bash
 $ php artisan serve
 ```
 
-**5-** Go to http://localhost:8000/ and voila
-
+**10-** Go to http://localhost:8000/ and voila
 
 ## What are we demonstrating here?
 
