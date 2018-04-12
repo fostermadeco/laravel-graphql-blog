@@ -35,12 +35,6 @@ $ cp .env.example .env
 $ composer install
 ```
 
-or
-
-```bash
-$ composer update
-```
-
 **4-** Generate a new application key for your app
 
 ```bash
@@ -78,7 +72,6 @@ $ php artisan migrate --seed
 ```bash
 $ npm install
 ```
-
 
 **9-** Run npm to compile the Js and CSS resources
 
