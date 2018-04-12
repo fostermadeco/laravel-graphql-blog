@@ -41,13 +41,13 @@ or
 $ composer update
 ```
 
-**3-** Generate a new application key for your app
+**4-** Generate a new application key for your app
 
 ```bash
 $ php artisan key:generate
 ```
 
-**4-** Edit the .env file and add / update your local database credentials in the .env file 
+**5-** Edit the .env file and add / update your local database credentials in the .env file 
 
 ```
 DB_CONNECTION=mysql
@@ -59,13 +59,6 @@ DB_PASSWORD=secret
 
 ```
 
-**5-** Run the database migration and seeders
-
-```bash
-$ php artisan migrate --seed
-
-```
-
 **6-** Create a symbolink link to your public storage
 
 ```bash
@@ -73,26 +66,34 @@ $ php artisan storage:link
 
 ```
 
-**7-** Run npm to install additional dependencies
+**7-** Run the database migration and seeders
+
+```bash
+$ php artisan migrate --seed
+
+```
+
+**8-** Run npm to install additional dependencies
 
 ```bash
 $ npm install
 ```
 
 
-**8-** Run npm to compile the Js and CSS resources
+**9-** Run npm to compile the Js and CSS resources
 
 ```bash
 $ npm run dev
 ```
 
-**9-** Launch the app
+**10-** Launch the app
 
 ```bash
 $ php artisan serve
 ```
 
-**10-** Go to http://localhost:8000/ and voila
+**11-** Go to http://localhost:8000/ and Voilà !!!
+
 
 ## What are we demonstrating here?
 
